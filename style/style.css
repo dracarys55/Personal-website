@@ -1,0 +1,309 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: MicrosoftYaHei, "微软雅黑", Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+}
+
+a.navred {
+  color: red !important;
+}
+
+body main section.background {
+  background-image: url("./images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg");
+  background-position: center;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section.background button {
+  border: white;
+  margin: 4rem;
+  border: 2px solid white;
+  font-size: 1.7rem;
+  width: 13rem;
+  height: 4rem;
+  letter-spacing: 0.3rem;
+}
+
+body main section.background h1 {
+  color: white;
+  margin: 4rem;
+  letter-spacing: 0.5rem;
+}
+
+body main header nav {
+  background-color: black;
+}
+
+body main header nav ul li {
+  margin-left: 0.5rem;
+  color: black;
+}
+
+body main header nav ul a {
+  margin-left: 1rem;
+}
+
+body main header nav ul a:hover {
+  color: #ee0505 !important;
+}
+
+body main section.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: black;
+}
+
+body main section.about img {
+  width: 18rem;
+  height: 18rem;
+  border-radius: 50%;
+}
+
+body main section.about h2 {
+  margin: 3rem;
+  font-size: 3rem;
+  color: white;
+}
+
+body main section.about p {
+  width: 80vw;
+  color: white;
+  font-size: 1.3rem;
+}
+
+body main section.portfolio {
+  min-width: 90vw;
+  min-height: 105vh;
+  background-color: #a0a0a0;
+}
+
+body main section.portfolio header nav ul li a.navportfolio {
+  color: red !important;
+}
+
+body main section.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 90vh;
+  background-color: #afadad;
+}
+
+body main section.projects h2 {
+  font-size: 8rem;
+  font-family: "Dancing Script", cursive;
+}
+
+body main section.projects div.myprojects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body main section.projects div.myprojects div.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3rem;
+}
+
+body main section.projects div.myprojects div.card a.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 1.5px;
+}
+
+body main section.projects div.myprojects div.card a.btn:hover {
+  background-color: #1998a3;
+}
+
+body main section.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background-color: black;
+}
+
+body main section.contact div.contactSheet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main section.contact div.contactSheet div.form {
+  width: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main section.contact div.contactSheet div.form div.input-group {
+  padding: 2rem 3rem;
+}
+
+body main section.contact div.contactSheet div.form div.input-group span {
+  background-color: black;
+  color: white;
+  border-radius: 10%;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+
+body main section.contact div.contactSheet div.form div.input-group input {
+  border-radius: 10%;
+}
+
+body main section.contact div.contactSheet div.form div.input-group textarea {
+  border-radius: 10%;
+}
+
+body main section.contact div.contactSheet div.form button {
+  width: 7rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  border-radius: 20%;
+}
+
+body main section.contact div.contactSheet div.v1 {
+  border-left: 3px solid white;
+  height: 500px;
+}
+
+body main section.contact div.contactSheet div.words {
+  width: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main section.contact div.contactSheet div.words button {
+  font-size: 2.5rem;
+  padding: 0.1px 10px;
+  border-radius: 20%;
+}
+
+body main section.contact div.contactSheet div.words button a {
+  text-decoration: none;
+  color: white;
+}
+
+body main section.contact div.contactSheet div.words button a:hover {
+  color: black;
+}
+
+body main section.contact div.contactSheet div.words h4 {
+  font-size: 6rem;
+  padding: 1.5rem;
+  font-family: "Dancing Script", cursive;
+  color: white;
+}
+
+body main section.contact div.contactSheet div.words p {
+  font-size: 1.2rem;
+  margin: 5rem 2rem;
+  color: white;
+}
+
+body main section.contact div.contactSheet div.words p.back {
+  margin: 0.3rem;
+}
+
+body main section.contact footer a {
+  text-decoration: none;
+}
+
+body main section.contact footer a img {
+  width: 5rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin: 1rem 2rem;
+}
+
+body main section.contact footer a img:hover {
+  width: 7rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: MicrosoftYaHei, "微软雅黑", Tahoma, Helvetica, Arial,
+    "\5b8b\4f53", sans-serif;
+}
+
+$wh: white;
+a.navred {
+  color: red !important;
+}
+
+body {
+  main {
+    section.background {
+      background-image: url("./images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg");
+      background-position: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        border: white;
+        margin: 4rem;
+        border: 2px solid $wh;
+        font-size: 1.7rem;
+        width: 13rem;
+        height: 4rem;
+        letter-spacing: 0.3rem;
+      }
+
+      h1 {
+        color: $wh;
+        margin: 4rem;
+        letter-spacing: 0.5rem;
+      }
+    }
+
+    header {
+      nav {
+        background-color: black;
+        ul {
+          li {
+            margin-left: 0.5rem;
+            color: black;
+          }
+          a {
+            margin-left: 1rem;
+            &:hover {
+              color: rgb(238, 5, 5) !important;
+            }
+          }
+        }
+      }
+    }
+
+    section.about {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+
+      img {
+        width: 18rem;
+        height: 18rem;
+        border-radius: 50%;
+      }
+      h2 {
+        margin: 3rem;
+        font-size: 3rem;
+        color: $wh;
+      }
+      p {
+        width: 80vw;
+        color: $wh;
+        font-size: 1.3rem;
+      }
+    }
+
+    section.portfolio {
+      min-width: 90vw;
+      min-height: 105vh;
+      background-color: rgb(160, 160, 160);
+
+      header {
+        nav {
+          ul {
+            li {
+              a.navportfolio {
+                color: red !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    section.projects {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 90vh;
+      background-color: rgb(175, 173, 173);
+      h2 {
+        font-size: 8rem;
+        font-family: "Dancing Script", cursive;
+      }
+
+      div.myprojects {
+        display: flex;
+        div.card {
+          display: flex;
+          margin: 3rem;
+
+          a.btn {
+            display: flex;
+            margin: 1px;
+            align-items: center;
+            justify-content: center;
+            letter-spacing: 1.5px;
+            &:hover {
+              background-color: rgb(25, 152, 163);
+            }
+          }
+        }
+      }
+    }
+
+    section.contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      background-color: black;
+      div.contactSheet {
+        display: flex;
+        margin: 3rem;
+        align-items: center;
+        justify-content: center;
+        div.form {
+          width: 40rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          div.input-group {
+            padding: 2rem 3rem;
+            span {
+              background-color: black;
+              color: white;
+              border-radius: 10%;
+              font-size: 1.3rem;
+              letter-spacing: 0.1rem;
+            }
+            input {
+              border-radius: 10%;
+            }
+            textarea {
+              border-radius: 10%;
+            }
+          }
+          button {
+            width: 7rem;
+            height: 3rem;
+            font-size: 1.3rem;
+            letter-spacing: 0.1rem;
+            border-radius: 20%;
+          }
+        }
+
+        div.v1 {
+          border-left: 3px solid $wh;
+          height: 500px;
+        }
+        div.words {
+          width: 40rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          button {
+            font-size: 2.5rem;
+            padding: 0.1px 10px;
+            border-radius: 20%;
+            a {
+              text-decoration: none;
+              color: $wh;
+              &:hover {
+                color: black;
+              }
+            }
+          }
+
+          h4 {
+            font-size: 6rem;
+            padding: 1.5rem;
+            font-family: "Dancing Script", cursive;
+            color: $wh;
+          }
+          p {
+            font-size: 1.2rem;
+            margin: 5rem 2rem;
+            color: $wh;
+          }
+          p.back {
+            margin: 0.3rem;
+          }
+        }
+      }
+
+      footer {
+        a {
+          text-decoration: none;
+          img {
+            width: 5rem;
+            transition: all 0.5s ease;
+            margin: 1rem 2rem;
+
+            &:hover {
+              width: 7rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
