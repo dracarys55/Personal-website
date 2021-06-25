@@ -15,6 +15,7 @@ body main section.background {
   background-image: url("./images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg");
   background-position: center;
   min-height: 100vh;
+  min-width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,6 +29,8 @@ body main section.background {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body main section.background button {
@@ -44,22 +47,23 @@ body main section.background h1 {
   color: white;
   margin: 4rem;
   letter-spacing: 0.5rem;
+  text-align: center;
 }
 
 body main header nav {
   background-color: black;
 }
 
-body main header nav ul li {
+body main header nav div ul li {
   margin-left: 0.5rem;
   color: black;
 }
 
-body main header nav ul a {
+body main header nav div ul a {
   margin-left: 1rem;
 }
 
-body main header nav ul a:hover {
+body main header nav div ul a:hover {
   color: #ee0505 !important;
 }
 
@@ -87,18 +91,21 @@ body main section.about img {
   width: 18rem;
   height: 18rem;
   border-radius: 50%;
+  margin: 3rem;
 }
 
 body main section.about h2 {
   margin: 3rem;
   font-size: 3rem;
   color: white;
+  text-align: center;
 }
 
 body main section.about p {
   width: 80vw;
   color: white;
   font-size: 1.3rem;
+  margin-bottom: 3rem;
 }
 
 body main section.portfolio {
@@ -138,6 +145,11 @@ body main section.projects div.myprojects {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body main section.projects div.myprojects div.card {
@@ -178,6 +190,8 @@ body main section.contact {
           align-items: center;
   min-height: 100vh;
   background-color: black;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body main section.contact div.contactSheet {
@@ -185,12 +199,15 @@ body main section.contact div.contactSheet {
   display: -ms-flexbox;
   display: flex;
   margin: 3rem;
+  min-height: 90vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body main section.contact div.contactSheet div.form {
@@ -252,12 +269,33 @@ body main section.contact div.contactSheet div.words {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main section.contact div.contactSheet div.words h4 {
+  font-size: 6rem;
+  padding: 1.5rem;
+  font-family: "Dancing Script", cursive;
+  color: white;
+  text-align: center;
+}
+
+body main section.contact div.contactSheet div.words p {
+  font-size: 1.2rem;
+  margin: 5rem 2rem;
+  color: white;
+  text-align: center;
+}
+
+body main section.contact div.contactSheet div.words p.back {
+  margin: 0.3rem;
 }
 
 body main section.contact div.contactSheet div.words button {
@@ -275,21 +313,15 @@ body main section.contact div.contactSheet div.words button a:hover {
   color: black;
 }
 
-body main section.contact div.contactSheet div.words h4 {
-  font-size: 6rem;
-  padding: 1.5rem;
-  font-family: "Dancing Script", cursive;
-  color: white;
-}
-
-body main section.contact div.contactSheet div.words p {
-  font-size: 1.2rem;
-  margin: 5rem 2rem;
-  color: white;
-}
-
-body main section.contact div.contactSheet div.words p.back {
-  margin: 0.3rem;
+body main section.contact footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body main section.contact footer a {
@@ -305,5 +337,26 @@ body main section.contact footer a img {
 
 body main section.contact footer a img:hover {
   width: 7rem;
+}
+
+@media screen and (max-width: 795px) {
+  section.contact div.contactSheet div.v1 {
+    display: none;
+  }
+  section.contact div.contactSheet div.words h4 {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  section.contact div.contactSheet div.form span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section.contact div.contactSheet {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -17,10 +17,12 @@ body {
       background-image: url("./images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg");
       background-position: center;
       min-height: 100vh;
+      min-width: 100vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
 
       button {
         border: white;
@@ -36,21 +38,24 @@ body {
         color: $wh;
         margin: 4rem;
         letter-spacing: 0.5rem;
+        text-align: center;
       }
     }
 
     header {
       nav {
         background-color: black;
-        ul {
-          li {
-            margin-left: 0.5rem;
-            color: black;
-          }
-          a {
-            margin-left: 1rem;
-            &:hover {
-              color: rgb(238, 5, 5) !important;
+        div {
+          ul {
+            li {
+              margin-left: 0.5rem;
+              color: black;
+            }
+            a {
+              margin-left: 1rem;
+              &:hover {
+                color: rgb(238, 5, 5) !important;
+              }
             }
           }
         }
@@ -70,16 +75,19 @@ body {
         width: 18rem;
         height: 18rem;
         border-radius: 50%;
+        margin: 3rem;
       }
       h2 {
         margin: 3rem;
         font-size: 3rem;
         color: $wh;
+        text-align: center;
       }
       p {
         width: 80vw;
         color: $wh;
         font-size: 1.3rem;
+        margin-bottom: 3rem;
       }
     }
 
@@ -114,6 +122,8 @@ body {
 
       div.myprojects {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         div.card {
           display: flex;
           margin: 3rem;
@@ -138,11 +148,15 @@ body {
       align-items: center;
       min-height: 100vh;
       background-color: black;
+      flex-wrap: wrap;
+
       div.contactSheet {
         display: flex;
         margin: 3rem;
+        min-height: 90vh;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         div.form {
           width: 40rem;
           display: flex;
@@ -182,8 +196,27 @@ body {
           width: 40rem;
           display: flex;
           flex-direction: column;
-          justify-content: center;
           align-items: center;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          h4 {
+            font-size: 6rem;
+            padding: 1.5rem;
+            font-family: "Dancing Script", cursive;
+            color: $wh;
+            text-align: center;
+          }
+          p {
+            font-size: 1.2rem;
+            margin: 5rem 2rem;
+            color: $wh;
+            text-align: center;
+          }
+          p.back {
+            margin: 0.3rem;
+          }
+
           button {
             font-size: 2.5rem;
             padding: 0.1px 10px;
@@ -196,25 +229,13 @@ body {
               }
             }
           }
-
-          h4 {
-            font-size: 6rem;
-            padding: 1.5rem;
-            font-family: "Dancing Script", cursive;
-            color: $wh;
-          }
-          p {
-            font-size: 1.2rem;
-            margin: 5rem 2rem;
-            color: $wh;
-          }
-          p.back {
-            margin: 0.3rem;
-          }
         }
       }
 
       footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         a {
           text-decoration: none;
           img {
@@ -228,6 +249,41 @@ body {
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 795px) {
+  section.contact {
+    div.contactSheet {
+      div.v1 {
+        display: none;
+      }
+      div.words {
+        h4 {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 660px) {
+  section.contact {
+    div.contactSheet {
+      div.form {
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  section.contact {
+    div.contactSheet {
+      width: 80%;
     }
   }
 }
