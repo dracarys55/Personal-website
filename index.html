@@ -13,51 +13,88 @@
       crossorigin="anonymous"
     />
     <!--google  cursive fonts- for projects h2-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <main>
-      <!--page one-->
-      <section id = "home" class="background">
-        <h1> 你好，我是Jack Liu</h1>
-        <button type="button" class="btn btn-dark btn-outline-light">
-          作品集展示
-        </button>
-      </section>
-
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <header id="navbar-scrollspy">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
           <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                  <a
+                    class="nav-link active home"
+                    aria-current="page"
+                    href="#HOME"
+                    >HOME</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">ABOUT</a>
+                  <a
+                    class="nav-link active about"
+                    aria-current="page"
+                    href="#ABOUT"
+                    >ABOUT</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">PORTFOLIO</a>
+                  <a
+                    class="nav-link active portfolio"
+                    aria-current="page"
+                    href="#PORTFOLIO"
+                    >PORTFOLIO</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">PROJECTS</a>
+                  <a
+                    class="nav-link active projects"
+                    aria-current="page"
+                    href="#PROJECTS"
+                    >PROJECTS</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">CONTACT</a>
-                </li>               
+                  <a
+                    class="nav-link active contact"
+                    aria-current="page"
+                    href="#CONTACT"
+                    >CONTACT</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
         </nav>
       </header>
-      <!--about page--> 
-      <section id = "about" class="about">
+
+      <!--page one-->
+      <section id="HOME" class="background">
+        <h1>你好，我是Jack Liu</h1>
+        <button type="button" class="btn btn-dark btn-outline-light">
+          作品集展示
+        </button>
+      </section>
+
+      <!--about page-->
+      <section id="ABOUT" class="about">
         <img
           src="./style/images/122454693_3456020867811167_1847988715198450375_n.jpg"
           alt="headShot"
@@ -70,8 +107,8 @@
           (Java, Python, SQL, MATLAB, and HTML/CSS/JS) and API's (Google Maps
           API, Firebase API, Greenfoot API). I've also worked on projects on the
           hardware side with Arduino, the Makerbot 3D printer, and Autodesk
-          inventor as well as with VR, with tools like Unity and the Gear VR.<br>
-          <br>
+          inventor as well as with VR, with tools like Unity and the Gear VR.<br />
+          <br />
           Furthermore, I'm also currently a research assistant in the Kurillo
           Tele-Immersion Lab at Berkeley and have done research in the past in
           the Schaffer Lab at Cornell and in the Rahmatalla Lab at UIowa. I have
@@ -80,145 +117,120 @@
       </section>
 
       <!--portfolio page-->
-      <section class="portfolio">
-        <header>
-          <nav class="navbar  navbar-expand-lg navbar-dark bg-dark >
-            <div class="collapse navbar-collapse " id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item  active">
-                  <a class="nav-link  text-white" href="#home"
-                    >HOME</a
-                  >
-                </li>
-              <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link text-white  " href="#about "
-                    >ABOUT</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white navportfolio" href="#">PORTFOLIO</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="#">PROJECTS</a>
-                </li>
-                
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="#">CONTACT</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
-      </section>
+      <section id="PORTFOLIO" class="portfolio"></section>
       <!--projects page-->
-      <header>
-        <nav class="navbar  navbar-expand-lg navbar-dark bg-dark >
-          <div class="collapse navbar-collapse " id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item  active">
-                <a class="nav-link  text-white" href="#home"
-                  >HOME</a
-                >
-              </li>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link text-white  " href="#about "
-                  >ABOUT</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white navportfolio" href="#">PORTFOLIO</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">PROJECTS</a>
-              </li>
-              
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">CONTACT</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-      <section class="projects">
+      <section id="PROJECTS" class="projects">
         <h2>Projects</h2>
         <div class="myprojects">
-          <div class="card" style="width: 20rem;">
-            <img src="./style/preview images/aditya-wardhana-qeoKt-KLumg-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card" style="width: 20rem">
+            <img
+              src="./style/preview images/aditya-wardhana-qeoKt-KLumg-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Photo shooting</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
               <a href="#" class="btn btn-dark">Demo</a>
               <a href="#" class="btn btn-dark">Github</a>
             </div>
           </div>
-          <div class="card" style="width: 20rem;">
-            <img src="./style/preview images/isaac-martin-_bLKmoqrJIA-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card" style="width: 20rem">
+            <img
+              src="./style/preview images/isaac-martin-_bLKmoqrJIA-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Animals</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
               <a href="#" class="btn btn-dark">Demo</a>
               <a href="#" class="btn btn-dark">Github</a>
             </div>
           </div>
-          <div class="card" style="width: 20rem;">
-            <img src="./style/preview images/ricky-kharawala-adK3Vu70DEQ-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card" style="width: 20rem">
+            <img
+              src="./style/preview images/ricky-kharawala-adK3Vu70DEQ-unsplash.jpg"
+              class="card-img-top"
+              alt="..."
+            />
             <div class="card-body">
               <h5 class="card-title">Ginypig</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
               <a href="#" class="btn btn-dark">Demo</a>
               <a href="#" class="btn btn-dark">Github</a>
             </div>
           </div>
         </div>
-        
       </section>
 
-      <section class="contact">
+      <section id="CONTACT" class="contact">
         <div class="contactSheet">
           <div class="form">
             <div class="input-group mb-3">
-              <span class="input-group-text " id="basic-addon1">您的姓名</span>
-              <input type="text " class="form-control" placeholder="Name" aria-label="Name" aria-describedby="basic-addon1">
+              <span class="input-group-text" id="basic-addon1">您的姓名</span>
+              <input
+                type="text "
+                class="form-control"
+                placeholder="Name"
+                aria-label="Name"
+                aria-describedby="basic-addon1"
+              />
             </div>
             <div class="input-group mb-3">
-              <span class="input-group-text " id="basic-addon1">電子郵件</span>
-              <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="basic-addon1">
+              <span class="input-group-text" id="basic-addon1">電子郵件</span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="E-mail"
+                aria-label="E-mail"
+                aria-describedby="basic-addon1"
+              />
             </div>
             <div class="input-group">
-              <span class="input-group-text ">你的需求</span>
-              <textarea class="form-control" placeholder="Needs" aria-label="Needs"></textarea>
+              <span class="input-group-text">你的需求</span>
+              <textarea
+                class="form-control"
+                placeholder="Needs"
+                aria-label="Needs"
+              ></textarea>
             </div>
-            <button type="button" class="btn btn-dark btn-outline-light">SUBMIT</button>
+            <button type="button" class="btn btn-dark btn-outline-light">
+              SUBMIT
+            </button>
           </div>
           <div class="v1"></div>
           <div class="words">
             <h4>Contact me</h4>
-            <p>I am available for hire and 
-              open to any idea of cooperation.</p>             
-            <button type="button" class="btn btn-dark btn-outline-light" ><a href="#home">⇈</a></button> 
-          </div>          
+            <p>I am available for hire and open to any idea of cooperation.</p>
+            <button type="button" class="btn btn-dark btn-outline-light">
+              <a href="#home">⇈</a>
+            </button>
+          </div>
         </div>
 
         <footer>
-        <!--links-->
-        <a href="#">
-            <img src="./style/Icons/facebook.svg"  alt="facebook page">
-        </a>
-        <a href="#">
-            <img src="./style/Icons/instagram.svg" alt="instagram page">
-        </a>
-        <a href="#">
-            <img src="./style/Icons/github-brands.svg" alt="github page">
-        </a>
+          <!--links-->
+          <a href="#">
+            <img src="./style/Icons/facebook.svg" alt="facebook page" />
+          </a>
+          <a href="#">
+            <img src="./style/Icons/instagram.svg" alt="instagram page" />
+          </a>
+          <a href="#">
+            <img src="./style/Icons/github-brands.svg" alt="github page" />
+          </a>
         </footer>
       </section>
-
     </main>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
@@ -226,4 +238,43 @@
       crossorigin="anonymous"
     ></script>
   </body>
+  <script>
+    ///show the red color if you scroll to the corresponding section//
+    let home = document.querySelector("header nav div ul li a");
+    let about = document.querySelector("header nav div ul li a.about");
+    let portfolio = document.querySelector("header nav div ul li a.portfolio");
+    let projects = document.querySelector("header nav div ul li a.projects");
+    let contact = document.querySelector("header nav div ul li a.contact");
+    window.addEventListener("scroll", (e) => {
+      if (window.pageYOffset != 0) {
+        home.style.color = "red";
+      } else {
+        home.style.color = "white";
+      }
+      if (window.pageYOffset > 550) {
+        about.style.color = "red";
+        home.style.color = "white";
+      } else {
+        about.style.color = "white";
+      }
+      if (window.pageYOffset > 1500) {
+        portfolio.style.color = "red";
+        about.style.color = "white";
+      } else {
+        portfolio.style.color = "white";
+      }
+      if (window.pageYOffset > 2100) {
+        projects.style.color = "red";
+        portfolio.style.color = "white";
+      } else {
+        projects.style.color = "white";
+      }
+      if (window.pageYOffset > 2900) {
+        contact.style.color = "red";
+        projects.style.color = "white";
+      } else {
+        contact.style.color = "white";
+      }
+    });
+  </script>
 </html>

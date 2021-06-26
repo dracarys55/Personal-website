@@ -12,6 +12,7 @@ a.navred {
 }
 
 body {
+  position: relative;
   main {
     section.background {
       background-image: url("./images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg");
@@ -75,7 +76,7 @@ body {
         width: 18rem;
         height: 18rem;
         border-radius: 50%;
-        margin: 3rem;
+        margin: 5rem 3rem;
       }
       h2 {
         margin: 3rem;
@@ -271,9 +272,12 @@ body {
 @media screen and (max-width: 660px) {
   section.contact {
     div.contactSheet {
-      div.form {
-        span {
-          display: none;
+      div.words {
+        button {
+          font-size: 4rem !important;
+          a {
+            padding: 0rem 0.5rem;
+          }
         }
       }
     }
