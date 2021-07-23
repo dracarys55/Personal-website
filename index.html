@@ -23,8 +23,8 @@
   </head>
   <body>
     <main>
-      <header id="navbar-scrollspy">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
           <div class="container-fluid">
             <button
               class="navbar-toggler"
@@ -87,9 +87,9 @@
 
       <!--page one-->
       <section id="HOME" class="background">
-        <h1>你好，我是Jack Liu</h1>
+        <h1>你好，我是 Jack Liu</h1>
         <button type="button" class="btn btn-dark btn-outline-light">
-          作品集展示
+          <a href="#PROJECTS">作品集展示</a>
         </button>
       </section>
 
@@ -101,18 +101,8 @@
         />
         <h2 class="">"Hi, my name is Jack Liu!"</h2>
         <p>
-          I am currently a Regents' Scholar at UC Berkeley, majoring in
-          Electrical Engineering and Computer Science (EECS). Over the past few
-          years I have had ample experience with various programming languages
-          (Java, Python, SQL, MATLAB, and HTML/CSS/JS) and API's (Google Maps
-          API, Firebase API, Greenfoot API). I've also worked on projects on the
-          hardware side with Arduino, the Makerbot 3D printer, and Autodesk
-          inventor as well as with VR, with tools like Unity and the Gear VR.<br />
-          <br />
-          Furthermore, I'm also currently a research assistant in the Kurillo
-          Tele-Immersion Lab at Berkeley and have done research in the past in
-          the Schaffer Lab at Cornell and in the Rahmatalla Lab at UIowa. I have
-          also interned at software companies such as Upthere.
+          在擔任英語老師的期間，加強自我專業並考取了多益英語能力 910
+          分，且利用工作之餘的時間自學了網頁前端技術，並確定了想要轉職的想法，陸續在網路上學習了相關前端課程，並使用所學開發出了自己的作品集。
         </p>
       </section>
 
@@ -124,50 +114,72 @@
         <div class="myprojects">
           <div class="card" style="width: 20rem">
             <img
-              src="./style/preview images/aditya-wardhana-qeoKt-KLumg-unsplash.jpg"
+              src="./style/preview images/youtube.PNG"
               class="card-img-top"
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Photo shooting</h5>
+              <h5 class="card-title">Youtube Project</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                身為一位 Youtube 重度使用者，每天看到最多的一定是 Youtube 網頁
+                因而興起了想試做看看 Youtube 的簡易首頁版，並串接 Youtube 的API
+                可實際查詢 與播放影片
               </p>
-              <a href="#" class="btn btn-dark">Demo</a>
-              <a href="#" class="btn btn-dark">Github</a>
+              <a
+                href="https://dracarys55.github.io/Youtube/"
+                class="btn btn-dark"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/dracarys55/Youtube"
+                class="btn btn-dark"
+                >Github</a
+              >
             </div>
           </div>
           <div class="card" style="width: 20rem">
             <img
-              src="./style/preview images/isaac-martin-_bLKmoqrJIA-unsplash.jpg"
+              src="./style/preview images/擷取2.PNG"
               class="card-img-top"
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Animals</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+              <h5 class="card-title">E-commerce</h5>
+              <p class="card-text part2">
+                在學習網頁的過程中，一直有一個自己小小的夢想，也就是建立一個電商網站，
+                姑且不論難易度，總算是完成了內心的願望清單。前端使用React框架並搭配了MongoDB資料庫，來做開發。
               </p>
-              <a href="#" class="btn btn-dark">Demo</a>
-              <a href="#" class="btn btn-dark">Github</a>
+
+              <a href="https://e-commerce55.herokuapp.com/" class="btn btn-dark"
+                >Demo</a
+              >
+              <a
+                href="https://github.com/dracarys55/E-commerce"
+                class="btn btn-dark"
+                >Github</a
+              >
             </div>
           </div>
           <div class="card" style="width: 20rem">
             <img
-              src="./style/preview images/ricky-kharawala-adK3Vu70DEQ-unsplash.jpg"
+              src="./style/preview images/擷取3.PNG"
               class="card-img-top"
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Ginypig</h5>
+              <h5 class="card-title">Personal Website</h5>
               <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
+                實際運用學到的網頁技術嘗試建立一個靜態網頁，並且可以在各種行動裝置中順暢瀏覽，使用了熱門的CSS前端框架
+                Bootstrap 追求開發的速度與效率。
               </p>
+              <br />
+
               <a href="#" class="btn btn-dark">Demo</a>
-              <a href="#" class="btn btn-dark">Github</a>
+              <a
+                href="https://github.com/dracarys55/Personal-website"
+                class="btn btn-dark"
+                >Github</a
+              >
             </div>
           </div>
         </div>
@@ -213,7 +225,7 @@
             <h4>Contact me</h4>
             <p>I am available for hire and open to any idea of cooperation.</p>
             <button type="button" class="btn btn-dark btn-outline-light">
-              <a href="#home">⇈</a>
+              <a href="#HOME">⇈</a>
             </button>
           </div>
         </div>
@@ -239,41 +251,14 @@
     ></script>
   </body>
   <script>
-    ///show the red color if you scroll to the corresponding section//
-    let home = document.querySelector("header nav div ul li a");
-    let about = document.querySelector("header nav div ul li a.about");
-    let portfolio = document.querySelector("header nav div ul li a.portfolio");
-    let projects = document.querySelector("header nav div ul li a.projects");
-    let contact = document.querySelector("header nav div ul li a.contact");
-    window.addEventListener("scroll", (e) => {
+    ///show the red color if you scroll to the corresponding section
+    let header = document.querySelector('header nav');
+
+    window.addEventListener('scroll', () => {
       if (window.pageYOffset != 0) {
-        home.style.color = "red";
+        header.style.backgroundColor = 'rgba(0, 0, 0, 0.7) ';
       } else {
-        home.style.color = "white";
-      }
-      if (window.pageYOffset > 550) {
-        about.style.color = "red";
-        home.style.color = "white";
-      } else {
-        about.style.color = "white";
-      }
-      if (window.pageYOffset > 1500) {
-        portfolio.style.color = "red";
-        about.style.color = "white";
-      } else {
-        portfolio.style.color = "white";
-      }
-      if (window.pageYOffset > 2100) {
-        projects.style.color = "red";
-        portfolio.style.color = "white";
-      } else {
-        projects.style.color = "white";
-      }
-      if (window.pageYOffset > 2900) {
-        contact.style.color = "red";
-        projects.style.color = "white";
-      } else {
-        contact.style.color = "white";
+        header.style.backgroundColor = 'rgba(0, 0, 0,) ';
       }
     });
   </script>

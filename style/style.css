@@ -47,6 +47,15 @@ body main section.background button {
   letter-spacing: 0.3rem;
 }
 
+body main section.background button a {
+  text-decoration: none;
+  color: white;
+}
+
+body main section.background button:hover a {
+  color: black;
+}
+
 body main section.background h1 {
   color: white;
   margin: 4rem;
@@ -56,6 +65,7 @@ body main section.background h1 {
 
 body main header nav {
   background-color: black;
+  height: 4rem;
 }
 
 body main header nav div ul li {
@@ -136,7 +146,7 @@ body main section.projects {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 90vh;
+  min-height: 110vh;
   background-color: #afadad;
 }
 
