@@ -4,7 +4,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: MicrosoftYaHei, "微软雅黑", Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  font-family: MicrosoftYaHei, '微软雅黑', Tahoma, Helvetica, Arial, '\5b8b\4f53', sans-serif;
 }
 
 a.navred {
@@ -19,7 +19,7 @@ body main section.background {
   background-image: url("./images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg");
   background-position: center;
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 90vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -105,14 +105,20 @@ body main section.about img {
   width: 18rem;
   height: 18rem;
   border-radius: 50%;
-  margin: 5rem 3rem;
+  margin: 0.3rem 3rem;
 }
 
 body main section.about h2 {
-  margin: 3rem;
+  margin: 2rem;
   font-size: 3rem;
   color: white;
   text-align: center;
+}
+
+body main section.about h3 {
+  color: white;
+  text-align: center;
+  margin: 2rem;
 }
 
 body main section.about p {
@@ -120,16 +126,66 @@ body main section.about p {
   color: white;
   font-size: 1.3rem;
   margin-bottom: 3rem;
+  letter-spacing: 3px;
+  line-height: 30px;
 }
 
 body main section.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-width: 90vw;
-  min-height: 105vh;
+  min-height: 100vh;
   background-color: #a0a0a0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body main section.portfolio header nav ul li a.navportfolio {
-  color: red !important;
+body main section.portfolio h2 {
+  font-size: 8rem;
+  font-family: 'Dancing Script', cursive;
+}
+
+body main section.portfolio div.skillsCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main section.portfolio div.skillsCards div.skills {
+  font-size: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem 1rem;
+}
+
+body main section.portfolio div.skillsCards div.skills h4 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1.3rem 0rem;
+}
+
+body main section.portfolio div.imageSkills img {
+  width: 8rem;
+  height: 8rem;
+  margin: 3rem 1.5rem;
 }
 
 body main section.projects {
@@ -152,7 +208,7 @@ body main section.projects {
 
 body main section.projects h2 {
   font-size: 8rem;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
 }
 
 body main section.projects div.myprojects {
@@ -296,7 +352,7 @@ body main section.contact div.contactSheet div.words {
 body main section.contact div.contactSheet div.words h4 {
   font-size: 6rem;
   padding: 1.5rem;
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   color: white;
   text-align: center;
 }

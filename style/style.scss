@@ -18,7 +18,7 @@ body {
       background-image: url('./images/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg');
       background-position: center;
       min-height: 100vh;
-      min-width: 100vw;
+      min-width: 90vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -87,36 +87,65 @@ body {
         width: 18rem;
         height: 18rem;
         border-radius: 50%;
-        margin: 5rem 3rem;
+        margin: 0.3rem 3rem;
       }
       h2 {
-        margin: 3rem;
+        margin: 2rem;
         font-size: 3rem;
         color: $wh;
         text-align: center;
+      }
+      h3 {
+        color: $wh;
+        text-align: center;
+        margin: 2rem;
       }
       p {
         width: 80vw;
         color: $wh;
         font-size: 1.3rem;
         margin-bottom: 3rem;
+        letter-spacing: 3px;
+        line-height: 30px;
       }
     }
 
     section.portfolio {
+      display: flex;
+      flex-direction: column;
       min-width: 90vw;
-      min-height: 105vh;
+      min-height: 100vh;
       background-color: rgb(160, 160, 160);
+      align-items: center;
 
-      header {
-        nav {
-          ul {
-            li {
-              a.navportfolio {
-                color: red !important;
-              }
-            }
+      h2 {
+        font-size: 8rem;
+        font-family: 'Dancing Script', cursive;
+      }
+      div.skillsCards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        div.skills {
+          font-size: 1.3rem;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          margin: 2rem 1rem;
+          h4 {
+            text-align: center;
+            font-size: 2rem;
+            margin: 1.3rem 0rem;
           }
+        }
+      }
+
+      div.imageSkills {
+        img {
+          width: 8rem;
+          height: 8rem;
+          margin: 3rem 1.5rem;
         }
       }
     }
